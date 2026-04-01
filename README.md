@@ -74,7 +74,9 @@ The LLM provider is configurable via `.env`.
 
 ### Default (recommended)
 
+<pre>
 LLM_PROVIDER=mock
+</pre>
 
 - No API key required
 - Deterministic outputs
@@ -82,8 +84,10 @@ LLM_PROVIDER=mock
 
 ### Optional: Real LLM
 
+<pre>
 LLM_PROVIDER=openai
 OPENAI_API_KEY=your_key
+</pre>
 
 Steps:
 1. Create API key at https://platform.openai.com/
@@ -99,15 +103,19 @@ If the real LLM fails (e.g., quota exceeded), the system automatically falls bac
 
 ## Setup Instructions
 
+```bash
 npm install
 cp .env.example .env
 npm run start
+```
 
 ---
 
 ## Running Tests
 
+```bash
 npm run test
+```
 
 Includes:
 - Unit tests for tools
