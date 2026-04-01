@@ -35,22 +35,24 @@ This project demonstrates an AI Agent that automates the pre-screening process u
 
 ## Architecture Overview
 
+<pre>
 User Input
-↓
+    ↓
 Planner (LLM / mock)
-↓
+    ↓
 Executor
-↓
-Tools:
- - Validation Tool
- - Risk Tool
- - Decision Tool
-↓
+    ↓
+Tools: 
+ · Validation Tool 
+ · Risk Tool 
+ · Decision Tool
+    ↓
 Aggregation
-↓
+    ↓
 LLM Summary (mock / real)
-↓
+    ↓
 Structured Output
+</pre>
 
 ---
 
@@ -115,17 +117,20 @@ Includes:
 
 ## Example Input
 
+```json
 {
   "name": "John",
   "income": 1000,
   "loanAmount": 6000,
   "creditScore": 580
 }
+```
 
 ---
 
 ## Example Output
 
+```json
 {
   "decision": "REVIEW",
   "riskLevel": "HIGH",
@@ -135,7 +140,7 @@ Includes:
   ],
   "summary": "Loan application is REVIEW with HIGH risk level. Reasons: Low credit score, High loan-to-income ratio."
 }
-
+```
 ---
 
 ## Observability
